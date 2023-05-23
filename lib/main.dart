@@ -39,39 +39,46 @@ class IDCardHead extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     color: const Color(0xff04360e),
-                    child: const Column(
+                    child: Column(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 70.0,
                         ),
-                        SizedBox(
-                          height: 80,
-                          width: 80,
-                          child: Image(
-                            image: AssetImage('images/logo.png'),
+                        Container(
+                          child: const SizedBox(
+                            height: 80,
+                            width: 80,
+                            child: Image(
+                              image: AssetImage('images/logo.png'),
+                            ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 40.0,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           child: Text(
                             'ISLAMIC UNIVERSITY OF TECHNOLOGY',
                             style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 80.0,
                         ),
                       ],
                     ),
                   ),
-                  const Positioned(
+                  Positioned(
                       bottom: -60,
-                      child: SizedBox(
+                      child: Container(
                         height: 120,
                         width: 120,
-                        child: Image(
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            width: 7.0,
+                          ),
+                        ),
+                        child: const Image(
                           image: AssetImage('images/avatar.png'),
                         ),
                       ),
@@ -90,7 +97,9 @@ class IDCardHead extends StatelessWidget {
                         Row(
                           children: [
                             Icon(Icons.key),
-                            Text('Student ID '),
+                            Text('Student ID ',
+                              style: TextStyle(fontSize: 16, ),
+                            ),
                           ],
                         ),
                       ],
@@ -135,7 +144,9 @@ class IDCardHead extends StatelessWidget {
                         Row(
                           children: [
                             Icon(Icons.person),
-                            Text('Student Name '),
+                            Text('Student Name ',
+                              style: TextStyle(fontSize: 16, ),
+                            ),
                           ],
                         ),
                       ],
@@ -160,9 +171,11 @@ class IDCardHead extends StatelessWidget {
                     Row(
                       children: [
                         Icon(Icons.school_rounded),
-                        Text(' Program '),
+                        Text(' Program ',
+                          style: TextStyle(fontSize: 16, ),
+                        ),
                         Text('BSc in CSE',
-                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -181,7 +194,7 @@ class IDCardHead extends StatelessWidget {
                         Icon(Icons.group),
                         Text(' Department '),
                         Text('CSE',
-                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
@@ -199,7 +212,7 @@ class IDCardHead extends StatelessWidget {
                       children: [
                         Icon(Icons.location_on_sharp),
                         Text(' Bangladesh',
-                          style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                          style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                         ),
                       ],
                     ),
