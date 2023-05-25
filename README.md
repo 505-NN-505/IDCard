@@ -2,7 +2,7 @@
 
 University ID Card
 
-<img src="/out/id-card.png" alt="id-card" width="50%" height="50%"/>
+<img src="/out/id-card.png" alt="id-card" width="25%" height="25%"/>
 
 ## Description
 
